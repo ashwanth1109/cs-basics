@@ -23,4 +23,4 @@ https://docs.python.org/3/library/index.html#library-index
 
 ### Contents
 
-1. [Python, the Language](https://github.com/ashwanth1109/cs-basics)
+1. [Python, the Language](https://github.com/ashwanth1109/cs-basics/blob/master/hello-python/notes/lesson01.md)
