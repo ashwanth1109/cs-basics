@@ -38,12 +38,30 @@ class LinkedList {
 
     returnAsString() {
         let currentNode = this.head;
-        let string = "" + currentNode.data + " => ";
+        let string = "";
         while (currentNode.next !== null) {
             string += currentNode.data + " => ";
             currentNode = currentNode.next;
         }
         return string + currentNode.data;
+    }
+
+    addNodeAfterN(n, item) {
+        let currentNode = this.head;
+        let newNode = new Node(item);
+        for (let i = 1; i < n; i++) currentNode = currentNode.next;
+        newNode.next = currentNode.next;
+        currentNode.next = newNode;
+    }
+
+    removeItemfromList(item) {
+        let currentNode = this.head;
+        let prevNode;
+        while (currentNode.data !== item) {
+            prevNode = currentNode;
+            currentNode = currentNode.next;
+        }
+        prevNode.next = currentNode.next;
     }
 }
 
@@ -54,4 +72,6 @@ linkedList1.addNodes([3, 4, 5, 6, 7, 8, 9, 10]);
 // Linked List - 1 => 2 => 3 => 4 => 5
 // ------------------------------------------------------------
 console.log(linkedList1.getElementAtN(8)); // 8
+linkedList1.addNodeAfterN(5, 5.5);
+linkedList1.removeItemfromList(5.5);
 console.log(linkedList1.returnAsString());
