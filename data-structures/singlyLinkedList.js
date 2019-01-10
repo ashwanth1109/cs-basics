@@ -63,6 +63,27 @@ class LinkedList {
         }
         prevNode.next = currentNode.next;
     }
+
+    removeAtN(n) {
+        let currentNode = this.head,
+            prevNode;
+        for (let i = 1; i < n; i++) {
+            prevNode = currentNode;
+            currentNode = currentNode.next;
+        }
+        prevNode.next = currentNode.next;
+    }
+
+    removeMNodesFromN(m, n) {
+        let currentNode = this.head,
+            prevNode;
+        for (let i = 1; i < n; i++) {
+            prevNode = currentNode;
+            currentNode = currentNode.next;
+        }
+        for (let i = 1; i < m; i++) currentNode = currentNode.next;
+        prevNode.next = currentNode.next;
+    }
 }
 
 const linkedList1 = new LinkedList(1);
@@ -74,4 +95,8 @@ linkedList1.addNodes([3, 4, 5, 6, 7, 8, 9, 10]);
 console.log(linkedList1.getElementAtN(8)); // 8
 linkedList1.addNodeAfterN(5, 5.5);
 linkedList1.removeItemfromList(5.5);
+linkedList1.removeAtN(7);
+linkedList1.removeMNodesFromN(4, 5);
+linkedList1.removeAtN(5);
+linkedList1.addNodes([5, 6, 7, 8, 9, 10]);
 console.log(linkedList1.returnAsString());
