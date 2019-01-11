@@ -64,3 +64,8 @@ Function to reverse linked list
 Function to swap two nodes
 
 ![Function to swap two nodes](./snippets/snip-011.png)
+
+Function to get the length of linked list
+
+![Function to get the length of linked list](./snippets/snip-012.png)
+
