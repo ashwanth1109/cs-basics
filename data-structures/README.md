@@ -60,3 +60,7 @@ Function to remove M nodes from position N
 Function to reverse linked list
 
 ![Function to reverse linked list](./snippets/snip-010.png)
+
+Function to swap two nodes
+
+![Function to swap two nodes](./snippets/snip-011.png)
