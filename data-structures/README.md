@@ -52,3 +52,7 @@ Function to remove an item from list
 Function to remove element at position N
 
 ![Function to remove element at position N](./snippets/snip-008.png)
+
+Function to remove M nodes from position N
+
+![Function to remove M nodes from position N](./snippets/snip-009.png)
