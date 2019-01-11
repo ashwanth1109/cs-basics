@@ -40,3 +40,7 @@ Function to get element at N position
 Function to return all elements in list as a string
 
 ![Function to return all elements in list as a string](./snippets/snip-005.png)
+
+Function add a node after N elements
+
+![Function add a node after N elements](./snippets/snip-006.png)
