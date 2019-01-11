@@ -44,3 +44,7 @@ Function to return all elements in list as a string
 Function add a node after N elements
 
 ![Function add a node after N elements](./snippets/snip-006.png)
+
+Function to remove an item from list
+
+![Function to remove an item from list](./snippets/snip-007.png)
