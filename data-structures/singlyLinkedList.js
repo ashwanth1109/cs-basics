@@ -98,6 +98,17 @@ class LinkedList {
         currentNode.next = prevNode;
         this.head = currentNode;
     }
+
+    swapTwoNodes(n1, n2) {
+        // n1 and n2 are positions
+        let currentNode = this.head;
+        [n1, n2] = [Math.max(n1, n2), Math.min(n1, n2)]; // n1 always greater than n2
+        for (let i = 1; i < n2; i++) currentNode = currentNode.next;
+        const firstNode = currentNode;
+        for (let i = 1; i < n1 - n2; i++) currentNode = currentNode.next;
+        const secondNode = currentNode.next;
+        [firstNode.data, secondNode.data] = [secondNode.data, firstNode.data];
+    }
 }
 
 const linkedList1 = new LinkedList(1);
@@ -114,4 +125,6 @@ linkedList1.removeMNodesFromN(4, 5);
 linkedList1.removeAtN(5);
 linkedList1.addNodes([5, 6, 7, 8, 9, 10]);
 linkedList1.reverseList();
+linkedList1.reverseList();
+linkedList1.swapTwoNodes(2, 3);
 console.log(linkedList1.returnAsString());
