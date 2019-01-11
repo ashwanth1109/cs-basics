@@ -56,3 +56,7 @@ Function to remove element at position N
 Function to remove M nodes from position N
 
 ![Function to remove M nodes from position N](./snippets/snip-009.png)
+
+Function to reverse linked list
+
+![Function to reverse linked list](./snippets/snip-010.png)
