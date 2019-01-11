@@ -22,3 +22,5 @@ So, a node has - (1) data, and (2) pointer
 ### Singly Linked List
 
 Singly Linked Lists have only one pointer - next
+
+![Node and LinkedList Classes](./snippets/snip-001.png)
