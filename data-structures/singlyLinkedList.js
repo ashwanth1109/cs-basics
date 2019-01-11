@@ -109,6 +109,29 @@ class LinkedList {
         const secondNode = currentNode.next;
         [firstNode.data, secondNode.data] = [secondNode.data, firstNode.data];
     }
+
+    getLength() {
+        let currentNode = this.head;
+        let counter = 1;
+        while (currentNode.next !== null) {
+            currentNode = currentNode.next;
+            counter++;
+        }
+        return counter;
+    }
+
+    isListEmpty() {
+        return this.getLength() === 1 && this.head.data === null;
+    }
+
+    implementFunc(func) {
+        let currentNode = this.head;
+        func(this.head);
+        while (currentNode.next !== null) {
+            currentNode = currentNode.next;
+            func(currentNode);
+        }
+    }
 }
 
 const linkedList1 = new LinkedList(1);
@@ -127,4 +150,10 @@ linkedList1.addNodes([5, 6, 7, 8, 9, 10]);
 linkedList1.reverseList();
 linkedList1.reverseList();
 linkedList1.swapTwoNodes(2, 3);
+console.log(linkedList1.returnAsString());
+console.log(linkedList1.getLength());
+console.log(linkedList1.isListEmpty());
+
+const multDataBy10 = node => (node.data *= 10);
+linkedList1.implementFunc(multDataBy10);
 console.log(linkedList1.returnAsString());
