@@ -69,3 +69,7 @@ Function to get the length of linked list
 
 ![Function to get the length of linked list](./snippets/snip-012.png)
 
+Function to check if list is empty
+
+![Function to check if list is empty](./snippets/snip-013.png)
+
