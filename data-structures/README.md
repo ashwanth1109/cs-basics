@@ -19,14 +19,12 @@ Linked Lists allow for efficient insertion or removal of elements from any posit
 
 So, a node has - (1) data, and (2) pointer
 
-### Singly Linked List
-
-Singly Linked Lists have only one pointer - next
-
-![Node and LinkedList Classes](./snippets/snip-001.png)
+### Singly Linked List - Singly Linked Lists have only one pointer (next)
 
 Node and LinkedList Classes
 
-![Function to add nodes](./snippets/snip-002.png)
+![Node and LinkedList Classes](./snippets/snip-001.png)
 
 Function to add nodes
+
+![Function to add nodes](./snippets/snip-002.png)
