@@ -25,6 +25,10 @@ Node and LinkedList Classes
 
 ![Node and LinkedList Classes](./snippets/snip-001.png)
 
-Function to add nodes
+Function to add a single node at the end
 
-![Function to add nodes](./snippets/snip-002.png)
+![Function to add node](./snippets/snip-002.png)
+
+Function to add array of nodes at the end
+
+![Function to add array of nodes at the end](./snippets/snip-003.png)
