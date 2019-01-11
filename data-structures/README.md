@@ -1,6 +1,6 @@
 ## Linked List
 
-Reference - Wikipedia (I know, I know, but good intro bro)
+Reference - Wikipedia (I know, I know, but its got a good intro)
 
 A linked list is a linear collection of data elements (also known as nodes) where one node points to the next by means of a pointer. Their order is not determined by their physical placement in memory but determined through the pointers where each element points to the next to give us our sequence.
 Linked Lists allow for efficient insertion or removal of elements from any position in the sequence during iteration.
@@ -32,3 +32,7 @@ Function to add a single node at the end
 Function to add array of nodes at the end
 
 ![Function to add array of nodes at the end](./snippets/snip-003.png)
+
+Function to get element at N position
+
+![Function to get element at N position](./snippets/snip-004.png)
