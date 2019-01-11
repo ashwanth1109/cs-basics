@@ -48,3 +48,7 @@ Function add a node after N elements
 Function to remove an item from list
 
 ![Function to remove an item from list](./snippets/snip-007.png)
+
+Function to remove element at position N
+
+![Function to remove element at position N](./snippets/snip-008.png)
