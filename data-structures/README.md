@@ -73,3 +73,10 @@ Function to check if list is empty
 
 ![Function to check if list is empty](./snippets/snip-013.png)
 
+Function to implement a function on every node
+
+![Function to implement a function on every node](./snippets/snip-014.png)
+
+Passing a function to multiply by 10 into implementFunc()
+
+![Passing a function to multiply by 10 into implementFunc()](./snippets/snip-014-1.png)
