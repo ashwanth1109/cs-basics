@@ -113,3 +113,11 @@ getLength(current = this.head, count = 1) {
 }
 ```
 
+11. Method to check if list is empty
+
+```javascript
+isListEmpty() {
+    return this.getLength() === 1 && this.head.data === null;
+}
+```
+
