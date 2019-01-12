@@ -24,3 +24,11 @@ class LinkedList {
 }
 ```
 
+3. Method to set head
+
+```javascript
+setHead(item) {
+    this.head.data = item;
+}
+```
+
