@@ -88,3 +88,16 @@ reverse(currentNode = this.head, prevNode = null, nextNode = null) {
 }
 ```
 
+9. Method to swap two nodes
+
+```javascript
+swapTwoNodes(pos1, pos2, current = this.head) {
+    [pos1, pos2] = [Math.min(pos1, pos2), Math.max(pos1, pos2)];
+    for (let i = 1; i < pos1; i++) current = current.next;
+    const node1 = current;
+    for (let i = pos1; i < pos2; i++) current = current.next;
+    const node2 = current;
+    [node1.data, node2.data] = [node2.data, node1.data];
+}
+```
+
