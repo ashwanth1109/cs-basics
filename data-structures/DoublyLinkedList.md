@@ -132,3 +132,17 @@ implementFunc(func, current = this.head) {
 }
 ```
 
+13. Method to display nodes separated by '<=>
+
+```javascript
+displayList(
+        node = this.head,
+        list = "" + node.data === null ? "" : node.data
+    ) {
+    while (node.next !== null) {
+        node = node.next;
+        list += " <=> " + node.data;
+    }
+    return list;
+}
+```
