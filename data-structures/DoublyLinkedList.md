@@ -56,3 +56,12 @@ addNodes(items) {
 }
 ```
 
+6. Method to add Node at a specific position
+
+```javascript
+addNodeAtPosition(item, pos, node = new Node(item), current = this.head) {
+    for (let i = 1; i < pos - 1; i++) current = current.next;
+    [node.next, current.next] = [current.next, node];
+}
+```
+
