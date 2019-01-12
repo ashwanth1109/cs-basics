@@ -65,3 +65,13 @@ addNodeAtPosition(item, pos, node = new Node(item), current = this.head) {
 }
 ```
 
+7. Method to remove Node at specific position
+
+```javascript
+removeNodeAtPosition(pos, current = this.head) {
+    for (let i = 1; i < pos - 1; i++) current = current.next;
+    const nextNode = current.next.next;
+    [nextNode.prev, current.next] = [current, nextNode];
+}
+```
+
