@@ -45,3 +45,14 @@ addNode(item, node = new Node(item)) {
 }
 ```
 
+5. Method to add Nodes
+
+```javascript
+addNodes(items) {
+    for (const item of items) {
+        const node = new Node(item);
+        [this.tail.next, node.prev, this.tail] = [node, this.tail, node];
+    }
+}
+```
+
