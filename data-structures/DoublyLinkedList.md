@@ -121,3 +121,14 @@ isListEmpty() {
 }
 ```
 
+12. Method to implement a function on all nodes
+
+```javascript
+implementFunc(func, current = this.head) {
+    while (current !== null) {
+        func(current);
+        current = current.next;
+    }
+}
+```
+
