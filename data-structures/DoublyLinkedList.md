@@ -101,3 +101,15 @@ swapTwoNodes(pos1, pos2, current = this.head) {
 }
 ```
 
+10. Method to get length of list
+
+```javascript
+getLength(current = this.head, count = 1) {
+    while (current.next !== null) {
+        current = current.next;
+        count++;
+    }
+    return count;
+}
+```
+
