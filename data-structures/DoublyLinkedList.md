@@ -14,3 +14,13 @@ class Node {
 }
 ```
 
+2. LinkedList class
+
+```javascript
+class LinkedList {
+    constructor() {
+        this.head = this.tail = new Node();
+    }
+}
+```
+
