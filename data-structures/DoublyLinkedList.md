@@ -32,3 +32,16 @@ setHead(item) {
 }
 ```
 
+4. Method to add node
+
+```javascript
+addNode(item, node = new Node(item)) {
+    if (!this.head.data) this.head = this.tail = node;
+    else {
+        node.prev = this.tail;
+        this.tail.next = node;
+        this.tail = node;
+    }
+}
+```
+
