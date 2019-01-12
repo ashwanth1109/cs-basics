@@ -75,3 +75,16 @@ removeNodeAtPosition(pos, current = this.head) {
 }
 ```
 
+8. Method to reverse list
+
+```javascript
+reverse(currentNode = this.head, prevNode = null, nextNode = null) {
+    while (currentNode) {
+        nextNode = currentNode.next;
+        [currentNode.next, currentNode.prev] = [prevNode, nextNode];
+        [prevNode, currentNode] = [currentNode, nextNode];
+    }
+    [this.tail, this.head] = [this.head, prevNode];
+}
+```
+
